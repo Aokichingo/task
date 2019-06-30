@@ -1,0 +1,7 @@
+<h1>新規投稿</h1>
+<%= link_to 'トップへ',posts_path %>
+<%= form_for @post do |f| %>
+<p><%= f.text_field :title, placeholder: 'お名前',class:"form-control" %></p>
+<p><%= f.text_area :description, placeholder: '内容',class:"form-control" %></p>
+<p><%= f.submit class:"btn btn-info" %></p>
+<% end %>
